@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+
+<body>
+<div class="accordion">
+		<div class="panel">
+        <h3 class="accordionTitle"><a href="#">Title 1</a></h3>
+        <div class="accordionDesc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p> Aliquam ut tristique ligula. Praesent faucibus mattis arcu, porta ultricies elit semper sit amet. Integer aliquet nulla dapibus pretium mattis.</p> 
+		</div>
+		</div>
+		
+		<div class="panel on">
+		 <h3 class="accordionTitle"><a href="#">Title 2</a></h3>
+        <div class="accordionDesc">
+            <p>Lorem ipsum Title 2 dolor sit amet, consectetur adipiscing elit.</p>
+            <p> Aliquam ut tristique ligula. Praesent faucibus mattis arcu, porta ultricies elit semper sit amet. Integer 
+			aliquet nulla dapibus pretium mattis.</p> <p> Aliquam ut tristique ligula. Praesent faucibus mattis arcu, porta ultricies elit semper sit amet. Integer 
+			aliquet nulla dapibus pretium mattis.</p> <p> Aliquam ut tristique ligula. Praesent faucibus mattis arcu, porta ultricies elit semper sit amet. Integer 
+			aliquet nulla dapibus pretium mattis.</p> 
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius massa quis metus mattis condimentum. 
+			Phasellus rutrum nisl ut lacus consectetur, vel sollicitudin ex dignissim. Phasellus et sapien dapibus, finibus erat id, sollicitudin neque. Ut congue dui orci, id cursus sapien porta ut. Aenean ac felis mi. Vivamus ut diam vel augue condimentum fringilla. Morbi sed vulputate dui, ut semper lacus. Aenean feugiat magna volutpat, vehicula ex ut, consectetur nulla. Vestibulum condimentum odio vitae nisi dapibus congue ornare vel lectus. Pellentesque tincidunt suscipit leo, non porta neque pharetra at. Vivamus quis tortor vitae risus pharetra venenatis. Nulla facilisi. Sed congue eros sapien, in ullamcorper magna pharetra vel. Cras vestibulum fringilla laoreet. Maecenas posuere magna ut elit ullamcorper, quis ultrices tortor sodales.
+</p><p>
+Praesent scelerisque sagittis neque, sit amet viverra nunc blandit a. Nulla id felis ut est commodo lacinia. Cras at magna dapibus, feugiat lectus non, rhoncus arcu. Nulla facilisi. Phasellus condimentum at lectus nec laoreet. Fusce nec feugiat tellus, sit amet varius nibh. Nam ligula arcu, fermentum vitae eleifend at, maximus id velit. Sed in egestas nibh. 
+		</p>
+		</div>
+		</div>
+		
+		<div class="panel">
+		<h3 class="accordionTitle"><a href="#">Title 3</a></h3>
+        <div class="accordionDesc">
+            <p>Lorem ipsum Title 3 dolor sit amet, consectetur adipiscing elit.</p>
+            <p> Aliquam ut tristique ligula. Praesent faucibus mattis arcu, porta ultricies elit semper sit amet. Integer aliquet nulla dapibus pretium mattis.</p> 
+			</div>
+		</div>
+		
+	</div>
+<style>
+
+.panel .accordionDesc{display:block; overflow:hidden; 
+
+}
+.panel.off .accordionDesc{ opacity:0; height:0px}
+.panel.on .accordionDesc{ opacity:1; height:auto;}
+.accordionDesc{
+-webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+}
+
+</style>
+
+<script src="accordion.js"></script>
+<script>
+new accordion('.accordion');
+/*
+var objArray = [
+    { id: 0, name: 'Object 0', otherProp: '321' },
+    { id: 1, name: 'O1', otherProp: '648' },
+    { id: 2, name: 'Another Object', otherProp: '850' },
+    { id: 3, name: 'Almost There', otherProp: '046' },
+    { id: 4, name: 'Last Obj', otherProp: '984' }
+];
+function findObjIndex(objArray,val){
+	var obj = objArray.find(function (obj) { return obj.id === val; });
+	var index = objArray.indexOf(obj);
+	return index;
+}
+var obj = objArray.find(function (obj) { return obj.id === 3; });
+var index = objArray.indexOf(obj);
+objArray.splice(index,1);
+console.log(objArray);
+*/
+
+</script>
+</body>
+
+</html> 
